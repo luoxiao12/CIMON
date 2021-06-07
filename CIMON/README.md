@@ -8,6 +8,8 @@
 
 ## DATASETS
 [CIFAR-10](http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
+[NUS-WIDE]
+[FLICKER25K]
 
 ## USAGE
 ```
