@@ -1,0 +1,25 @@
+2020-12-30 10:26:34.134 | INFO     | __main__:run:41 - Namespace(alpha=2, arch='vgg16', batch_size=24, beta=2, code_length=128, dataset='cifar-10', device=device(type='cuda', index=3), eta=0.3, evaluate=False, evaluate_interval=50, gpu=3, lr=0.001, max_iter=150, num_class=70, num_query=10000, num_train=5000, num_workers=4, root='../../Dataset', temperature=0.5, threshold=0.1, topk=-1, train=True, verbose=False)
+2020-12-30 11:54:09.060 | INFO     | cimon:train:140 - [iter:50/150][map:0.4812]
+2020-12-30 13:17:26.091 | INFO     | cimon:train:140 - [iter:100/150][map:0.4959]
+2020-12-30 14:40:47.610 | INFO     | cimon:train:140 - [iter:150/150][map:0.4981]
+2020-12-30 14:45:11.883 | INFO     | cimon:train:156 - Training finish, [iteration:150][map:0.4981]
+2020-12-30 14:45:15.022 | INFO     | __main__:run:41 - Namespace(alpha=2, arch='vgg16', batch_size=24, beta=2, code_length=64, dataset='cifar-10', device=device(type='cuda', index=3), eta=0.3, evaluate=False, evaluate_interval=50, gpu=3, lr=0.001, max_iter=150, num_class=70, num_query=10000, num_train=5000, num_workers=4, root='../../Dataset', temperature=0.5, threshold=0.1, topk=-1, train=True, verbose=False)
+2020-12-30 16:12:12.138 | INFO     | cimon:train:140 - [iter:50/150][map:0.4709]
+2020-12-30 17:35:11.839 | INFO     | cimon:train:140 - [iter:100/150][map:0.4790]
+2020-12-30 18:58:18.244 | INFO     | cimon:train:140 - [iter:150/150][map:0.4944]
+2020-12-30 19:02:22.041 | INFO     | cimon:train:156 - Training finish, [iteration:150][map:0.4944]
+2020-12-30 19:02:24.498 | INFO     | __main__:run:41 - Namespace(alpha=2, arch='vgg16', batch_size=24, beta=2, code_length=32, dataset='cifar-10', device=device(type='cuda', index=3), eta=0.3, evaluate=False, evaluate_interval=50, gpu=3, lr=0.001, max_iter=150, num_class=70, num_query=10000, num_train=5000, num_workers=4, root='../../Dataset', temperature=0.5, threshold=0.1, topk=-1, train=True, verbose=False)
+2020-12-30 20:29:16.507 | INFO     | cimon:train:140 - [iter:50/150][map:0.4527]
+2020-12-30 21:51:59.329 | INFO     | cimon:train:140 - [iter:100/150][map:0.4594]
+2020-12-30 23:14:50.412 | INFO     | cimon:train:140 - [iter:150/150][map:0.4723]
+2020-12-30 23:18:42.762 | INFO     | cimon:train:156 - Training finish, [iteration:150][map:0.4723]
+2020-12-30 23:18:45.122 | INFO     | __main__:run:41 - Namespace(alpha=2, arch='vgg16', batch_size=24, beta=2, code_length=16, dataset='cifar-10', device=device(type='cuda', index=3), eta=0.3, evaluate=False, evaluate_interval=50, gpu=3, lr=0.001, max_iter=150, num_class=70, num_query=10000, num_train=5000, num_workers=4, root='../../Dataset', temperature=0.5, threshold=0.1, topk=-1, train=True, verbose=False)
+2020-12-31 00:45:29.740 | INFO     | cimon:train:140 - [iter:50/150][map:0.4229]
+2020-12-31 02:08:23.377 | INFO     | cimon:train:140 - [iter:100/150][map:0.4335]
+2020-12-31 03:31:18.572 | INFO     | cimon:train:140 - [iter:150/150][map:0.4506]
+2020-12-31 03:35:06.427 | INFO     | cimon:train:156 - Training finish, [iteration:150][map:0.4506]
+start run all models
+python run.py --dataset cifar-10 --root ../../Dataset --num-query 10000 --num-train 5000 --gpu 3 --train  --code-length 128 --topk -1 --num_class 70 --threshold 0.1 --eta 0.3 --batch-size 24
+python run.py --dataset cifar-10 --root ../../Dataset --num-query 10000 --num-train 5000 --gpu 3 --train  --code-length 64 --topk -1 --num_class 70 --threshold 0.1 --eta 0.3 --batch-size 24
+python run.py --dataset cifar-10 --root ../../Dataset --num-query 10000 --num-train 5000 --gpu 3 --train  --code-length 32 --topk -1 --num_class 70 --threshold 0.1 --eta 0.3 --batch-size 24
+python run.py --dataset cifar-10 --root ../../Dataset --num-query 10000 --num-train 5000 --gpu 3 --train  --code-length 16 --topk -1 --num_class 70 --threshold 0.1 --eta 0.3 --batch-size 24
