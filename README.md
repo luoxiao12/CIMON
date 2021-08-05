@@ -1,4 +1,4 @@
-# A pytorch implementation for paper "CIMON: Towards High-quality Hash Codes" 
+# A pytorch implementation for paper "CIMON: Towards High-quality Hash Codes", IJCAI 2021
 
 ## REQUIREMENTS
 1. pytorch 1.4
